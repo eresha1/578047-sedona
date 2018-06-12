@@ -6,7 +6,7 @@
   </head>
   <body>
     <div class="wrapper">
-    	<header class="main-header">
+      <header class="main-header">
         <nav class="main-navigation">
           <a class="main-header-logo">
             <img src="img/logo.png" width="138" height="70" alt="Логотип города Сидона">
@@ -17,8 +17,8 @@
             <li><a href="#">Карта штата</a></li>
             <li><a href="inner.html">Гостиницы</a></li>
           </ul>
-        </nav>  	           	
-    	</header>
+        </nav>                
+      </header>
       <main class="container">
         <div  class="picture">
         </div>
@@ -83,14 +83,12 @@
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <b>Заинтересовались?</b>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-          <p><button type="button" class="button">Поиск гостиницы в Седоне</button></p>
+          <p><button type="button" class="button button-search">Поиск гостиницы в Седоне</button></p>
         </section>
         <div class="map">
           <img src="img/map.jpg" width="1200" height="593" alt="Интерактивная карта штата"> 
-          <div class="search-info">
-            <!-- Здесь будет форма -->
-          </div>
         </div>
+
       </main>
       <footer class="main-footer">
         <p class="footer-hashtag">#visitSEDONA</p>
@@ -106,8 +104,42 @@
           <a class="copyright-link" href="#">
             <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML academy">
           </a>
-        </p>       
+        </p>     
+          
       </footer>
+      <section class="modal modal-search">
+        <h2 class="visually-hidden">Форма поиска гостиницы</h2>
+        <!-- Здесь будет форма -->
+        <form class="search-info" method="post" action="https://echo.htmlacademy.ru">
+          <div>
+            <label for="arrive">Дата заезда:</label>
+            <div class="date-with-button">
+              <input id="arrive" type="text" name="arrive" value="" placeholder="24 апреля 2017">
+              <button type="button" class="search-info-calendar">календарь</button>
+            </div>
+          </div>
+          <div>
+            <label for="depart">Дата выезда:</label>
+            <div class="date-with-button">
+              <input id="depart" type="text" name="depart" value="" placeholder="4 июля 2017">
+              <button type="button" class="search-info-calendar">календарь</button>
+            </div>
+          </div>
+          <label for="adult">Взрослые:</label>
+          <div class="counter">
+            <button type="button" class="number-button"> - </button>
+            <input id="adult" type="number" name="adult" value="2">
+            <button type="button" class="number-button"> + </button>
+          </div>
+          <label for="children">Дети:</label>
+          <div class="counter">
+            <button type="button" class="number-button"> - </button>
+            <input id="children" type="number" name="children" value="0">
+            <button type="button" class="number-button"> + </button>
+          </div>
+          <button class="button button-find" type="submit">Найти</button>
+        </form>
+        </section> 
     </div>
   </body>
 </html>
