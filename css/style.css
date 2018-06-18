@@ -52,14 +52,22 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/*
-.picture {
-  background-image: url("../img/background-photo.jpg");
-  background-image: url("../img/background-text.png");
-  background-image: url("../img/background-zigzag.png"); 	
+.picture img {
+  display: block;
+  margin: 0 auto;
+  width: 458px;
+  height: 352px; 
 }
 
-*/
+.picture {
+  min-height: 432px;
+  padding-top: 76px;
+  background-size: 1200px 57px, cover;
+  background-image: url("../img/background-zigzag.png"), url("../img/background-photo.jpg");
+  background-position: center bottom, center -107px;
+  background-repeat: no-repeat;
+}
+
 
 .reasons, 
 .search {
