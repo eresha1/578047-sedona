@@ -12,7 +12,7 @@
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-header-logo">
-            <img src="img/logo.png" width="138" height="70" alt="Логотип города Сидона">
+            <img src="img/logo.png" width="138" height="70" alt="Логотип города Седона">
           </a>
           <ul class="site-navigation">
             <li><a href="#">Информация</a></li>
@@ -27,13 +27,16 @@
           <img src="img/background-text.png" alt="Добро пожаловать в Седону" width="458" height="352">
         </div>
         <article class="reasons">
+          <div class="description-wrapper">
           <b class="description">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
           <div class="reason-block">
             <div class="reason reason-special"> 
-              <h2 class="reason-title">Настоящий городок</h2>  
+              <h2 class="reason-title">Настоящий 
+              городок</h2>  
               <p>— №1 —</p>  
-              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p>Седона — не аттракцион для туристов, <br> там течёт своя жизнь</p>
             </div>
             <div class="reason-picture"> 
               <img src="img/reason-picture-1.jpg" width="800" height="256" alt="">
@@ -42,14 +45,17 @@
           <div class="reason-features">               
             <ul class="reason-features-list">
               <li class="feature-item">
+                
                 <b class="reason-title">Жильё</b>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="feature-item">
+                
                 <b class="reason-title">Еда</b>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="feature-item">
+                
                 <b class="reason-title">Сувениры</b>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
@@ -60,7 +66,8 @@
                 <img src="img/reason-picture-2.jpg" width="800" height="256" alt="">
             </div> 
             <div class="reason reason-special"> 
-              <h2 class="reason-title">Там есть Мост дьявола</h2>  
+              <h2 class="reason-title">Там есть <br>
+              Мост дьявола</h2>  
               <p>— №2 —</p>  
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
@@ -79,14 +86,16 @@
             <div class="reason">
               <h2 class="reason-title">Мало туристов</h2>  
               <p>— №5 —</p>  
-              <p>Большинство едет в гранд каньон и толпится там</p>
+              <p>Большинство едет в гранд каньон 
+                <br> и толпится там</p>
             </div>
           </div>
         </article>
         <section class="search">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <b>Заинтересовались?</b>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+          <p>Укажите предполагаемые даты поездки, <br>
+           и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           <p><button type="button" class="button button-search">Поиск гостиницы в Седоне</button></p>
         </section>
         <div class="map">
@@ -115,28 +124,28 @@
         <h2 class="visually-hidden">Форма поиска гостиницы</h2>
         <!-- Здесь будет форма -->
         <form class="search-info" method="post" action="https://echo.htmlacademy.ru">
-          <div>
-            <label for="arrive">Дата заезда:</label>
+          <div class="form-date">
+            <label class="date-with-button date-enter" for="arrive">Дата заезда:</label>
             <div class="date-with-button">
-              <input id="arrive" type="text" name="arrive" value="" placeholder="24 апреля 2017">
+              <input class="input-text" id="arrive" type="text" name="arrive" value="" placeholder="24 апреля 2017">
               <button type="button" class="calendar">календарь</button>
             </div>
           </div>
-          <div>
-            <label for="depart">Дата выезда:</label>
+          <div class="form-date">
+            <label class="date-with-button date-enter"  for="depart">Дата выезда:</label>
             <div class="date-with-button">
-              <input id="depart" type="text" name="depart" value="" placeholder="4 июля 2017">
+              <input  class="input-text" id="depart" type="text" name="depart" value="" placeholder="4 июля 2017">
               <button type="button" class="calendar">календарь</button>
             </div>
           </div>
-          <label for="adult">Взрослые:</label>
-          <div class="counter">
+          <label class="row-counter" for="adult">Взрослые:</label>
+          <div class="counter row-counter">
             <button type="button" class="number-button"> - </button>
             <input id="adult" type="number" name="adult" value="2">
             <button type="button" class="number-button"> + </button>
           </div>
-          <label for="children">Дети:</label>
-          <div class="counter">
+          <label class="row-counter" for="children">Дети:</label>
+          <div class="counter row-counter">
             <button type="button" class="number-button"> - </button>
             <input id="children" type="number" name="children" value="0">
             <button type="button" class="number-button"> + </button>
