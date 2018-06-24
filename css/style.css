@@ -14,9 +14,11 @@ body {
 }
 
 .wrapper {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   text-align: center;
+  background-color: #ffffff;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
@@ -52,24 +54,23 @@ p, h1, h2, h3, ul, li {
 }
 
 .main-navigation {
+  position: relative;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: #000000; 
 }
 
 .site-navigation {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
 }
 
 .site-navigation li {
   width: 240px;
-  padding-top: 13px;
-  padding-bottom: 17px;
   text-align: center;
   list-style: none;
 }
@@ -79,6 +80,9 @@ p, h1, h2, h3, ul, li {
 }
 
 .site-navigation a {
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 17px;
   color: #000000;
 }
 
@@ -94,9 +98,6 @@ p, h1, h2, h3, ul, li {
   color: #766357;
 }
 
-.container {
-  background-color: #ffffff;
-}
 
 .picture img {
   display: block;
@@ -141,14 +142,19 @@ p, h1, h2, h3, ul, li {
   height: 256px;
 }
 
+.reason {
+  width: 400px;
+}
+
+.reason-picture{
+  width: 800px;
+}
+
 .reason-picture img {
   width: 800px;
   height: 256px;
 }
 
-.reason-block {
-  margin-bottom: 161px;
-}
 
 .reason-special {
   padding-top: 47px;
@@ -182,6 +188,7 @@ p, h1, h2, h3, ul, li {
   text-align: center;
 }
 
+
 .reason-features ul {
   display: flex;
   justify-content: space-between;
@@ -191,6 +198,7 @@ p, h1, h2, h3, ul, li {
 
 .feature-item {
   width: 400px;
+   padding-top: 161px;
   text-align: center;
 }
 
@@ -212,9 +220,6 @@ p, h1, h2, h3, ul, li {
   margin-bottom: 49px;
 }
 
-.reason {
-  width: 400px;
-}
 
 .reason-others .reason p:nth-child(3) {
   padding: 0 62px;
@@ -257,9 +262,19 @@ p, h1, h2, h3, ul, li {
 }
 
 .main-footer {
+ 
   line-height: 26px;
   color: #000000;
-  background-color: rgba(255, 255, 255, 0.9);
+ 
+}
+
+.footer-index {
+  position: absolute;
+   width: 1200px;
+  left: 0;
+ bottom: 0;
+   background-color: rgba(255, 255, 255, 0.9);
+   outline: 1px solid red;
 }
 
 .footer-hashtag {
@@ -418,17 +433,17 @@ p, h1, h2, h3, ul, li {
 
 .input-text:-ms-input-placeholder {
   color: inherit;
-  text-transform: inherit;
+  text-transform: uppercase;
 }
 
 .input-text::-ms-input-placeholder {
   color: inherit;
-  text-transform: inherit;
+  text-transform: uppercase;
 }
 
 .input-text::placeholder {
   color: inherit;
-  text-transform: inherit;
+  text-transform: uppercase;
 }
 
 /* inner-page */
