@@ -126,7 +126,7 @@ img {
   margin-bottom: 59px;
   background-size: 1200px 57px, cover;
   background-image: url("../img/background-zigzag.png"), url("../img/background-photo.jpg");
-  background-position: center bottom, center -107px;
+  background-position: center bottom, center -57px;
   background-repeat: no-repeat;
 }
 
@@ -623,6 +623,10 @@ img {
   text-transform: uppercase;
 }
 
+.map {
+  height: 593px;
+  overflow: hidden;
+}
 /* inner-page */
 
 .filters {
