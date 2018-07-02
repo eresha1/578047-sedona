@@ -17,7 +17,6 @@ body {
   position: relative;
   width: 1200px;
   margin: 0 auto;
-  text-align: center;
   background-color: #ffffff;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
@@ -32,10 +31,7 @@ a {
 
 
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 .visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
   position: absolute;
@@ -81,23 +77,34 @@ img {
   padding: 0;
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
-}
-
-.site-navigation li {
-  width: 240px;
-  text-align: center;
   list-style: none;
 }
 
-.site-navigation li:nth-child(2) {
-  margin-right: 240px;
+.site-navigation li {
+  width: 240px; 
+  padding-top: 14px;
+  padding-bottom: 16px;
+ 
 }
 
+.site-navigation li:nth-child(3),
+.site-navigation li:last-child {
+  text-align: right;
+}
+
+.site-navigation li:first-child   {
+  margin-left: 72px;
+}
+
+.site-navigation li:last-child {
+padding-right: 72px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+}
 .site-navigation a {
-  display: block;
-  padding-top: 13px;
-  padding-bottom: 17px;
+ 
   color: #000000;
 }
 
@@ -125,6 +132,7 @@ img {
   padding-top: 76px;
   margin-bottom: 59px;
   background-size: 1200px 57px, cover;
+      background-color: #6e95bb;
   background-image: url("../img/background-zigzag.png"), url("../img/background-photo.jpg");
   background-position: center bottom, center -57px;
   background-repeat: no-repeat;
@@ -183,7 +191,7 @@ img {
   padding: 0 120px;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 800;
+  font-weight: 700;
   color: #000000;
   text-align: center;
 }
@@ -200,8 +208,12 @@ img {
 }
 
 .reason p:nth-child(3) {
-  
-  padding: 0 40px;
+   margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.reason p:last-child {
+  margin: 0;
   text-align: center;
 }
 
@@ -286,7 +298,7 @@ img {
 .search b {
   font-size: 30px;
   line-height: 36px;
-  font-weight: 800;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -299,10 +311,11 @@ img {
 }
 
 .button-search {
-  padding: 30px 139px;
+  width: 568px;
+  padding: 30px 10px;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 800;
+  font-weight: 700;
   background-color: #766357;
   cursor: pointer;
 }
@@ -318,16 +331,18 @@ img {
 }
 
 .main-footer {
-  display: flex;
-  padding-bottom: 37px;
+      display: flex;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
   line-height: 26px;
   color: #000000;
 }
 
 .footer-index {
   position: absolute;
+  z-index: 20;
   width: 1200px;
-  left: 0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -335,25 +350,29 @@ img {
 .footer-hashtag {
   margin: 0;
   padding: 0;
-  width: 400px;
-  padding-top: 47px;
+  width: 400px; 
   font-size: 21px;
-  font-weight: 800;
+  font-weight: 700;
+  text-align: center;
 }
 
 .footer-social {
-  width: 400px;
-  padding-top: 37px;
+  width: 400px; 
 }
 
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 152px;
+  justify-content: center;
+  width: 160px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
+}
+
+.footer-social li {
+    margin-right: 4px;
+    margin-left: 2px;
 }
 
 .social-button {
@@ -385,18 +404,17 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  padding-top: 40px;
+  width: 400px; 
 }
 
 .footer-copyright span {
-  width: 80px;
-  margin-right: 4px;
-  padding-bottom: 10px;
+  width: 78px; 
 }
 
-.copiriting-link {
-  width: 115px;
+.copyright-link { 
+    width: 115px;
+    height: 44px;
+    margin-left: 6px; 
 }
 
 .copyright-link:hover path,
@@ -412,20 +430,22 @@ img {
 
 .search {
   position: relative;
+  z-index: 20; 
   margin: 0 auto;
   width: 568px;
+  text-align: center;
 }
 
 
 .search-info { 
   position: absolute;
   display: none;
-  z-index: 1; 
+  z-index: 11; 
   width: 100%;
   margin: 0 auto;
   padding: 55px;
   line-height: 26px;
-  font-weight: 800;
+  font-weight: 700;
   color: #000000;
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -448,7 +468,7 @@ img {
   }
 
   100% {
-    transform: scaleY(400px);
+    transform: scaleY(395px);
   }
 
 }
@@ -489,13 +509,12 @@ img {
   box-sizing: border-box;
 }
 
-.search-info input:hover,
-.search-info input:focus {
+.search-info input:hover {
   background-color: #ebebeb;
   border: none;
 }
 
-.search-info input:active {
+.search-info input:focus {
   font: inherit;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
@@ -623,7 +642,7 @@ img {
   padding: 16px 0px;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   background-color: #81b3d2;
   border: none;
@@ -660,9 +679,32 @@ img {
 }
 
 .map {
-  height: 593px;
+      position: relative;
+    height: 593px;
   overflow: hidden;
 }
+
+.map-image,
+ .map-interactive {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.map-image {
+        z-index: 5;
+        width: 1200px;
+    height: 593px;
+}
+
+.map-interactive {
+    z-index: 10;
+    width: 1200px;
+    height: 593px;
+
+}
+
 /* inner-page */
 
 .filters {
@@ -726,15 +768,11 @@ img {
 .filter .infrastructure {
   width: 254px; 
   margin: 0;
-    padding: 0;
-    border: 0;
  }
 
 .filter .housing-type {
   width: 254px; 
-  margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0; 
 }
 
 .infrastructure legend, .housing-type legend {
@@ -803,8 +841,8 @@ img {
 .filter-interval label {
   display: inline-block;
   font-size: 14px;
-  line-height: 30px;
-  vertical-align: top;
+  line-height: 21px; 
+  padding-top: 5px;
   cursor: pointer;
 }
 
@@ -905,7 +943,7 @@ img {
   text-align: left;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 800;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -1028,7 +1066,7 @@ img {
 .hotels-block-title a {
   font-size: 21px;
   line-height: 26px;
-  font-weight: 800;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -1046,7 +1084,7 @@ img {
   padding: 5px 17px;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   background-color: #81b3d2;
   box-sizing: border-box;
@@ -1066,7 +1104,7 @@ img {
   padding: 5px 17px;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   background-color: #766357;
   box-sizing: border-box;
