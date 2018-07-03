@@ -490,6 +490,7 @@ a {
   background-color: #f2f2f2;
   border: none;
   box-sizing: border-box;
+  outline: none;
 }
 
 .search-info input:hover {
@@ -508,6 +509,7 @@ a {
   height: 38px;
   background-color: #f2f2f2;
   border: none;
+  outline: none;
 }
 
 .calendar path {
@@ -568,6 +570,7 @@ a {
   background-color: #f2f2f2;
   border: none;
   box-sizing: border-box;
+   outline: none;
 }
 
 .number-button {
@@ -578,6 +581,7 @@ a {
   border: none;
   background-color: #f2f2f2;
   cursor: pointer;
+  outline: none;
 }
 
 .number-button-minus::before {
