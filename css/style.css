@@ -480,10 +480,6 @@ a {
   align-items: center;
 }
 
-.form-date label {
-  width: 112px;
-}
-
 .form-date input {
   padding: 0 10px;
   width: 308px;
@@ -837,6 +833,7 @@ a {
   color: #ffffff;
   background: transparent;
   border: none;
+  line-height: 21px;
 }
 
 .filter-range {
