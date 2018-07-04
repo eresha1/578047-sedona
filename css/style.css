@@ -454,10 +454,10 @@ a {
 
 @keyframes fallout {
   0% {
-    transform: scaleY(0);
+    opacity: 0;
   }
   100% {
-    transform: scaleY(395px);
+    opacity: 1;
   }
 }
 
@@ -480,6 +480,10 @@ a {
   align-items: center;
 }
 
+.form-date label {
+  width: 112px;
+}
+
 .form-date input {
   padding: 0 10px;
   width: 308px;
@@ -490,7 +494,6 @@ a {
   background-color: #f2f2f2;
   border: none;
   box-sizing: border-box;
-  outline: none;
 }
 
 .search-info input:hover {
@@ -509,7 +512,6 @@ a {
   height: 38px;
   background-color: #f2f2f2;
   border: none;
-  outline: none;
 }
 
 .calendar path {
@@ -570,7 +572,6 @@ a {
   background-color: #f2f2f2;
   border: none;
   box-sizing: border-box;
-   outline: none;
 }
 
 .number-button {
@@ -581,7 +582,6 @@ a {
   border: none;
   background-color: #f2f2f2;
   cursor: pointer;
-  outline: none;
 }
 
 .number-button-minus::before {
@@ -680,6 +680,10 @@ a {
   z-index: 10;
   width: 1200px;
   height: 593px;
+}
+
+.map-interactive iframe {
+  border: 0;
 }
 
 /* inner-page */
