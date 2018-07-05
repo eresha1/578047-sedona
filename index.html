@@ -43,8 +43,7 @@
           <h2 class="reason-title">Настоящий городок
           </h2>
           <p>— №1 —</p>
-          <p>Седона — не аттракцион для туристов,</p>
-          <p> там течёт своя жизнь</p>
+          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
         <div class="reason-picture">
           <img src="img/reason-picture-1.jpg" width="800" height="256" alt="Фото Мост Дьявола">
@@ -74,28 +73,25 @@
           <h2 class="reason-title">Там есть
             <br> Мост дьявола</h2>
           <p>— №2 —</p>
-          <p>Да, по нему можно пройти! Если конечно</p>
-          <p>вы осмелитесь</p>
+          <p>Да, по нему можно пройти! Если конечно 
+           вы осмелитесь</p>
         </div>
       </div>
       <div class="reason-others">
         <div class="reason">
           <h2 class="reason-title">Небольшая площадь</h2>
           <p>— №3 —</p>
-          <p>Все достопримечательности</p>
-          <p>находятся очень близко</p>
+          <p>Все достопримечательности находятся очень близко</p>
         </div>
         <div class="reason">
           <h2 class="reason-title">Красивая дорога</h2>
           <p>— №4 —</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем</p>
-          <p>не скучно!</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div class="reason">
           <h2 class="reason-title">Мало туристов</h2>
           <p>— №5 —</p>
-          <p>Большинство едет в гранд каньон</p>
-          <p>и толпится там</p>
+          <p class="reason-long">Большинство едет в гранд каньон и толпится там</p>
         </div>
       </div>
       <section class="search">
@@ -109,6 +105,7 @@
             <label class="date-enter" for="arrive">Дата заезда:</label>
             <input class="input-text" id="arrive" type="text" name="arrive" placeholder="24 апреля 2017">
             <button type="button" class="calendar">
+              <span class="visually-hidden">Календарь</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                 <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"
                 />
@@ -120,6 +117,7 @@
           <div class="form-date">
             <label class="date-enter" for="depart">Дата выезда:</label>
             <input class="input-text" id="depart" type="text" name="depart" placeholder="4 июля 2017">
+            <span class="visually-hidden">Календарь</span>
             <button type="button" class="calendar">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                 <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"
@@ -132,15 +130,19 @@
           <div class="form-counter">
             <div class="form-counter-common adult">
               <label class="" for="adult">Взрослые:</label>
+              <span class="visually-hidden">Минус</span>
               <button type="button" class="number-button number-button-minus"></button>
               <input id="adult" type="text" name="adult" placeholder="2">
+              <span class="visually-hidden">Плюс</span>
               <button type="button" class="number-button number-button-plus"></button>
             </div>
             <div class="form-counter">
               <div class="form-counter-common children">
                 <label for="children">Дети:</label>
+                <span class="visually-hidden">Минус</span>
                 <button type="button" class="number-button number-button-minus"></button>
                 <input id="children" type="text" name="children" placeholder="0">
+                <span class="visually-hidden">Плюс</span>
                 <button type="button" class="number-button number-button-plus"></button>
               </div>
             </div>
