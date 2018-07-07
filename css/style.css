@@ -507,7 +507,7 @@ display: none;
 .search-info input:focus {
   font: inherit;
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
 }
 
 .calendar {
@@ -701,12 +701,10 @@ display: none;
 .filter {
   margin: 0;
   padding: 0;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding: 26px 72px 7px;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  padding-top: 26px;
+  align-items: flex-start; 
 }
 
 .filter-option {
@@ -714,9 +712,6 @@ display: none;
   padding-left: 40px;
 }
 
-.filter-option:last-child {
-  margin-bottom: 32px;
-}
 
 .filter-option label {
   position: relative;
@@ -792,7 +787,7 @@ display: none;
 */
 
 .filter .price {
-  width: 320px;
+  width: 318px;
   margin-left: auto;
 }
 
@@ -802,8 +797,6 @@ display: none;
 
 .filter-interval {
   position: relative;
-  width: 320px;
-  height: 36px;
   margin-bottom: 20px;
   font-size: 0;
   box-sizing: border-box;
@@ -816,7 +809,7 @@ display: none;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
   width: 2px;
   height: 22px;
   background: #ffffff;
@@ -825,15 +818,16 @@ display: none;
 .filter-interval label {
   display: inline-block;
   vertical-align: middle;
+  padding-top: 5px;
+  padding-bottom: 4px; 
   font-size: 14px;
   line-height: 21px;
-  padding-top: 5px;
   cursor: pointer;
 }
 
 .filter-interval .max-interval {
   width: 90px;
-  padding-left: 60px;
+  padding-left: 57px;
 }
 
 .filter-interval .min-interval {
@@ -894,10 +888,10 @@ display: none;
 }
 
 .button-filter {
+  display: block;
   width: 137px;
-  padding: 5px 0px;
-  margin-left: 84px;
-  margin-bottom: 34px;
+  padding: 6px 34px 5px;
+  margin-left: 85px;
   text-align: center;
   font-size: 14px;
   line-height: 21px;
@@ -956,7 +950,7 @@ display: none;
   margin-right: 37px;
 }
 
-.sort-list li:nth-child(2), .sort-list li:nth-child(3) {
+.sort-list li:not(:first-child) {
   margin-right: 30px;
 }
 
@@ -1127,7 +1121,7 @@ display: none;
 .icon-star::before {
   content: "";
   display: inline-block;
-      vertical-align: middle;
+  vertical-align: baseline;
   height: 19px;
   width: 19px;
   background-image: url("../img/star.svg");
