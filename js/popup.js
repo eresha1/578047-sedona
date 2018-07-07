@@ -7,15 +7,19 @@ var dateDepart = searchForm.querySelector("#depart");
 var numberAdult = searchForm.querySelector("#adult");
 var numberChildren = searchForm.querySelector("#children");
 
+if (searchForm) {
+  searchForm.classList.add("modal-close");
+}
 
-link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  searchForm.classList.toggle("modal-show");
-  searchForm.classList.remove("modal-error");
+if (link) {
+  link.addEventListener("click", function (event) {
+    searchForm.classList.toggle("modal-close");
+    searchForm.classList.toggle("modal-show");
+    searchForm.classList.remove("modal-error");
 
-  dateArrive.focus();
-
-});
+    dateArrive.focus();
+  });
+}
 
 form.addEventListener("submit", function (evt) {
   if (!dateArrive.value || !dateDepart.value ||

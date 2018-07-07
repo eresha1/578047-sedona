@@ -161,9 +161,9 @@ a {
 
 .reason {
   width: 400px;
-      padding: 48px 0;
-    box-sizing: border-box;
-     text-align: center;
+  padding: 48px 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .reason-picture {
@@ -190,7 +190,6 @@ a {
   line-height: 21px;
   font-weight: 700;
   color: #000000;
- 
 }
 
 .reason-special>.reason-title {
@@ -199,34 +198,31 @@ a {
 
 .reason p:nth-child(2) {
   margin-top: 24px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .reason-others {
   background-color: #eeeeee;
   display: flex;
   flex-flow: row nowrap;
-  
   padding-bottom: 11px;
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-.reason-block p,
-.reason-others p {
+.reason-block p, .reason-others p {
   margin: 0;
-  padding: 0 60px; 
+  padding: 0 60px;
 }
 
-.reason-block-invert p{
+.reason-block-invert p {
   margin: 0;
-  padding: 0 40px; 
+  padding: 0 40px;
 }
 
 .reason-others .reason-long {
   margin: 0;
-  padding: 0 75px; 
+  padding: 0 75px;
 }
-
 
 .reason-features ul {
   margin: 0;
@@ -287,7 +283,6 @@ a {
   text-align: center;
 }
 
-
 .search b {
   font-size: 30px;
   line-height: 36px;
@@ -304,6 +299,8 @@ a {
 }
 
 .button-search {
+  position: relative;
+  z-index: 2;
   width: 568px;
   padding: 30px 10px;
   font-size: 21px;
@@ -426,9 +423,10 @@ a {
   text-align: center;
 }
 
- .search-info {
+.search-info {
   position: absolute;
-   z-index: 11;
+  z-index: 1;
+  transform-origin: top;
   width: 100%;
   margin: 0 auto;
   padding: 55px;
@@ -440,13 +438,13 @@ a {
   box-sizing: border-box;
 }
 
-.search-info {
-display: none;
-}
-
- .modal-show {
+.modal-show {
   display: block;
   animation: fallout 0.6s;
+}
+
+.modal-close {
+  display: none;
 }
 
 .modal-error {
@@ -457,10 +455,10 @@ display: none;
 
 @keyframes fallout {
   0% {
-    opacity: 0;
+    transform: scaleY(0) translateY(-100%);
   }
   100% {
-    opacity: 1;
+    transform: scaleY(1) translateY(0);
   }
 }
 
@@ -704,7 +702,7 @@ display: none;
   padding: 26px 72px 7px;
   display: flex;
   flex-flow: row nowrap;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 .filter-option {
@@ -712,12 +710,10 @@ display: none;
   padding-left: 40px;
 }
 
-
 .filter-option label {
   position: relative;
   display: block;
   cursor: pointer;
-  
 }
 
 .filter-input-checkbox+label::before {
@@ -738,28 +734,25 @@ display: none;
   background-image: url("../img/checkbox-on.svg");
 }
 
-.filter-input-checkbox:disabled + label {
+.filter-input-checkbox:disabled+label {
   color: #6a6a6a;
 }
 
-.filter-input-checkbox:disabled + label::before {
+.filter-input-checkbox:disabled+label::before {
   background-image: url("../img/checkbox-disabled-off.svg");
 }
 
-.filter-input-checkbox:checked:disabled + label::before {
+.filter-input-checkbox:checked:disabled+label::before {
   width: 27px;
   background-image: url("../img/checkbox-disabled-on.svg");
 }
 
-.filter-input-checkbox:focus + label::before {
+.filter-input-checkbox:focus+label::before {
   outline: 1px solid #81B3D2;
-  outline-offset: 1px; 
+  outline-offset: 1px;
 }
 
-
-
-.filter .infrastructure,
-.filter .housing-type {
+.filter .infrastructure, .filter .housing-type {
   width: 255px;
   margin: 0;
 }
@@ -786,7 +779,6 @@ display: none;
   padding: 0;
   list-style: none;
 }
-
 
 .filter .price {
   width: 318px;
@@ -821,7 +813,7 @@ display: none;
   display: inline-block;
   vertical-align: middle;
   padding-top: 5px;
-  padding-bottom: 4px; 
+  padding-bottom: 4px;
   font-size: 14px;
   line-height: 21px;
   cursor: pointer;
@@ -978,7 +970,7 @@ display: none;
 
 .sort-icon-up, .sort-icon-down {
   display: inline-block;
-      vertical-align: middle;
+  vertical-align: middle;
   padding-left: 9px;
   padding-top: 5px;
 }

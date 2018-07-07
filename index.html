@@ -6,7 +6,7 @@
   <title>Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -73,8 +73,7 @@
           <h2 class="reason-title">Там есть
             <br> Мост дьявола</h2>
           <p>— №2 —</p>
-          <p>Да, по нему можно пройти! Если конечно 
-           вы осмелитесь</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </div>
       <div class="reason-others">
@@ -103,7 +102,7 @@
         <form class="search-info" method="post" action="https://echo.htmlacademy.ru">
           <div class="form-date">
             <label class="date-enter" for="arrive">Дата заезда:</label>
-            <input class="input-text" id="arrive" type="text" name="arrive" placeholder="24 апреля 2017">
+            <input class="input-text" id="arrive" type="text" name="arrive" placeholder="24 апреля 2017" required>
             <button type="button" class="calendar">
               <span class="visually-hidden">Календарь</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -116,7 +115,7 @@
           </div>
           <div class="form-date">
             <label class="date-enter" for="depart">Дата выезда:</label>
-            <input class="input-text" id="depart" type="text" name="depart" placeholder="4 июля 2017">
+            <input class="input-text" id="depart" type="text" name="depart" placeholder="4 июля 2017" required>
             <span class="visually-hidden">Календарь</span>
             <button type="button" class="calendar">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -132,7 +131,7 @@
               <label class="" for="adult">Взрослые:</label>
               <span class="visually-hidden">Минус</span>
               <button type="button" class="number-button number-button-minus"></button>
-              <input id="adult" type="text" name="adult" placeholder="2">
+              <input id="adult" type="text" name="adult" placeholder="2" required>
               <span class="visually-hidden">Плюс</span>
               <button type="button" class="number-button number-button-plus"></button>
             </div>
@@ -141,7 +140,7 @@
                 <label for="children">Дети:</label>
                 <span class="visually-hidden">Минус</span>
                 <button type="button" class="number-button number-button-minus"></button>
-                <input id="children" type="text" name="children" placeholder="0">
+                <input id="children" type="text" name="children" placeholder="0" required>
                 <span class="visually-hidden">Плюс</span>
                 <button type="button" class="number-button number-button-plus"></button>
               </div>
@@ -203,7 +202,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/popup.js"></script>
+  <script src="js/popup.min.js"></script>
 </body>
 
 </html>
