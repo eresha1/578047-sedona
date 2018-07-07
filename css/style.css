@@ -717,39 +717,50 @@ display: none;
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  
 }
 
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
   left: -40px;
-  width: 39px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.filter-input-checkbox:checked+label::after {
-  content: "";
-  position: absolute;
-  left: -39px;
+.filter-input-checkbox:checked+label::before {
   width: 27px;
-  height: 23px;
   background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+}
+
+.filter-input-checkbox:disabled + label {
+  color: #6a6a6a;
+}
+
+.filter-input-checkbox:disabled + label::before {
+  background-image: url("../img/checkbox-disabled-off.svg");
+}
+
+.filter-input-checkbox:checked:disabled + label::before {
+  width: 27px;
+  background-image: url("../img/checkbox-disabled-on.svg");
+}
+
+.filter-input-checkbox:focus + label::before {
+  outline: 1px solid #81B3D2;
+  outline-offset: 1px; 
 }
 
 
-.filter .infrastructure {
-  width: 254px;
-  margin: 0;
-}
 
+.filter .infrastructure,
 .filter .housing-type {
-  width: 254px;
+  width: 255px;
   margin: 0;
 }
 
@@ -776,15 +787,6 @@ display: none;
   list-style: none;
 }
 
-/*.filter-input:hover+label, .filter-input:focus+label {
-  color: #81b3d2;
-}
-
-.filter-input:active+label {
-  color: #000000;
-  opacity: 0.3;
-}
-*/
 
 .filter .price {
   width: 318px;
@@ -956,7 +958,7 @@ display: none;
 
 .sort-item a {
   color: rgba(0, 0, 0, .3);
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-item-current a {
