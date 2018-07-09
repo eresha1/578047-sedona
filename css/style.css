@@ -391,20 +391,18 @@ a {
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 400px;
 }
 
 .footer-copyright span {
   width: 78px;
-  margin-left: auto;
 }
 
 .copyright-link {
   width: 115px;
   height: 44px;
-  margin-left: 4px;
-  margin-right: 100px;
+  margin-left: 6px;
 }
 
 .copyright-link:hover path, .copyright-link:focus path {
